@@ -48,6 +48,43 @@ body {
     justify-content: center;
     gap: 20px;
 }
+.foot{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: aliceblue;
+    background-color: rgb(31, 27, 27);
+    height: 100px;
+    width: 100%;
+}
+.text-box{
+    font-weight: bolder;
+    padding: 15px;
+}
+.button2{
+    display: flex;
+    align-items: center;
+    font-size:xx-small;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(224, 122, 32);
+}
+
+.img1{
+    position: absolute;
+    top: 60px;
+    left: 170px;
+}
+.img2{
+    display: none;
+}
+.empty{
+    width: 100vw;
+    height: 340px;
+}
+
 @media only screen and (max-width:600px){
     .content{
         display: flex;
@@ -61,5 +98,31 @@ body {
     }
     .button1{
         width: 180px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        align-items: flex-start;
+        height: 140px;
+    }
+    .img1{
+        display: none;
+    }
+    .text-box{
+        padding: 10px 5px;
+    }
+    .img2{
+        padding: 10px;
+        display:flex;
+        position: absolute;
+        left: 120px;
+        top: 40px;
+    }
+    .empty{
+        height: 50px;
+    }
+    .button2{
+        margin-left: 15px;
     }
 }
