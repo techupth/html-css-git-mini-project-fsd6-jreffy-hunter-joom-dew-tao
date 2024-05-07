@@ -1,139 +1,218 @@
 body {
-    font-family: "Poppins",sans-serif;
-    box-sizing: content-box;
-    
+  font-family: "Poppins", sans-serif;
+  box-sizing: content-box;
 }
-
 
 .review {
-    background-color: white;
-    margin: 100px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  background-color: white;
+  position: relative;
 }
 
-.review-sec{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }
 
-.rvtop{
-    background-color: orange;
-    width: 500px;
-    height: 250px;
-    border-radius: 20px;
-    margin-left: 150px;
-    position: relative;
-    left:50px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-
+.review-sec {
+  display: flex;
+  flex-direction: column;
 }
 
-.rw5000 {
-    width: 500px;
-    height: 250px;
-    border-radius: 20px;
-    padding-left:200px;
-    position: relative;
-    bottom: 200px;
-    left: 250px;
-    
+.rvtop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: orange;
+  width: 450px;
+  height: 250px;
+  border-radius: 20px;
+  position: relative;
+  margin: 400px;
+  position: absolute;
+  left: 100px;
+  z-index: 2;
+  box-shadow: rgba(226, 190, 30, 0.16) 0px 6px 9px,
+    rgba(248, 227, 41, 0.23) 0px 6px 9px;
 }
 
-.rvbuttm{
-    background-color: whitesmoke;
-    width: 500px;
-    height: 230px;
-    border-radius: 20px;
-    position: absolute;
-    top: 200px;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-
+.rwtop1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
 }
 
+.photo1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: rgb(175, 173, 173);
+  margin: 20px;
+}
 
+.rwtop2 {
+  padding: 20px;
+  color: white;
+}
 
-.photo1,
+.rvbottm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 253, 250);
+  width: 450px;
+  height: 250px;
+  border-radius: 20px;
+  position: relative;
+  margin: 400px;
+  border: 2px solid rgb(243, 225, 225);
+  position: absolute;
+  top: 90px;
+  z-index: 1;
+}
+
+.rwbottom1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(204, 200, 200);
+}
 .photo2 {
-    width: 80px;
-    height: 80px;
-    background-color: rgb(219, 217, 217);
-    border-radius: 300px;
-    margin: 20px 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: rgb(175, 173, 173);
+  margin: 20px;
 }
 
-.rwtop1,
-.rwbuttom1 {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.name {
-    margin-top: 40px;
-    color: white;
-    font-size: 15px;
-}
-
-.msg1 {
-    padding: 20px;
-    margin-top: 5;
-    color: white;
-    font-size: 15px;
-}
-.msg2 {
-    padding: 20px;
-    margin-top: 5;
-    color: rgb(145, 142, 142);
-    font-size: 15px;
-}
-
-
-.star {
-    position: relative;
-    top:50px;
-    left: 150px;
-}
-
-.checked {
-    color: white;
-    
+.rvbottom2 {
+  padding: 20px;
+  color: rgb(172, 166, 166);
 }
 
 .bt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 200px;
-    left: 400px;
-    
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 100px;
+}
+
+.rw5000 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+  height: 400px;
+  margin: 400px;
+  position: absolute;
+  left: 600px;
+  top: 30px;
 }
 
 .frm-student {
-    font-size: 20px;
-    padding-bottom:20px;
+  font-size: 20px;
 }
 
-.msg-5000{
-    font-size: 14px;
+.msg-5000 {
+  font-size: 14px;
 }
 
-@media screen and (max-width: 1024) {
-    .container {
-        display: flox;
-        flex-direction: column;
-        justify-content: center;
-    }
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100vw;
   }
+
+  .rvtop{
+    width: 300px;
+    height: 500px;
+    margin: 20px auto;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top:250px;
+
+  }
+  .star {
+    position: absolute;
+    top:120px;
+    right: 190px;
+  }
+
+  .msg {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .photo1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+  }
+
+  #name {
+    font-weight: 500;
+  }
+  
+  .rvbottm {
+    width: 300px;
+    height: 500px;
+    margin: 20px auto;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+
+  }
+
+  
+
+  .rwtop1,
+  .rwbottom1 {
+    justify-content: center;
+
+  }
+
+  .rw5000 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+
+  }
+
+  .frm-student{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom:920px;
+    left: 120px;
+  }
+
+  .msg-5000 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom:820px;
+    left: 120px;
+  }
+
+}
