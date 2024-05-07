@@ -1,3 +1,17 @@
 body {
     font-family: "Poppins",sans-serif;
+    width: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
+.section1 {
+    background-color: #FFFBF4;
+}
+    @media screen only and (max-width:600px){
+        .section1-navbar{
+            display:none;
+        }
+    }
