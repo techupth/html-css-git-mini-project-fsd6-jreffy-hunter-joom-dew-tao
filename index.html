@@ -16,9 +16,65 @@
   </head>
   <body>
     <section class="1"></section>
-    <section class="2"></section>
-    
-    <!-- SECTION TAO BELOW HERE -->
+    <section class="2 w-screen flex flex-col items-center p-10 gap-5">
+      <h2 class="foot-text font-bold text-[40px]">Trusted Companies</h2>
+      <div class="companies flex flex-row justify-between gap-5">
+        <div
+          class="'com-0 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-0.png" /><img
+            src="./images/text-0.png"
+            class="h-3"
+          />
+        </div>
+        <div
+          class="com-1 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-1.png" /><img
+            src="./images/text-1.png"
+            class="h-3"
+          />
+        </div>
+        <div
+          class="com-2 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-2.png" /><img
+            src="./images/text-2.png"
+            class="h-4"
+          />
+        </div>
+        <div
+          class="com-3 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-3.png" /><img
+            src="./images/text-3.png"
+            class="h-4"
+          />
+        </div>
+        <div
+          class="com-4 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-4.png" /><img
+            src="./images/text-4.png"
+            class="h-4"
+          />
+        </div>
+      </div>
+      <style>
+        @media only screen and (max-width: 600px) {
+          .foot-text {
+            font-size: 32px;
+            padding-bottom: 5px;
+          }
+          .companies {
+            display: grid;
+            grid-template-columns: repeat(1, 3fr);
+            height: 60vh;
+          }
+        }
+      </style>
+    </section>
+    <!-- SECTION3 TAO BELOW HERE -->
     <section id="section-help" class="bg-white grid grid-cols-2 my-[10rem] mx-[40rem] flex-wrap">
       <div class="cirble-box relative z-10">
           <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#d4eff6] rounded-full animate-pulse" id="blue-box"></div>
@@ -37,9 +93,7 @@
           </button>
       </div>
   </section>
-    <!-- END OF SECTION TAO -->
-    
-
+    <!-- END OF SECTION3 TAO -->
     <section class="section4 flex flex-col items-center ">
       <div class="container">
         <p class="header-text text-center w-screen font-bold">We Have Most of <br>Popular Departments</p>
@@ -126,4 +180,176 @@
       <button class="button2">Register Now</button>
     </div>
   </section>
+    <section class="8 w-screen bg-black flex flex-col items-center">
+      <div class="inner-container w-3/4 flex flex-row justify-around">
+        <div class="card-1 flex flex-col justify-between pr-2 flex-wrap">
+          <div class="above grid pt-20 gap-3">
+            <img src="./images/logo-eu.png" />
+            <p class="text-gray-400 text-base">
+              Professionally scale cross functional
+            </p>
+            <p class="text-gray-400 text-base">
+              human capital and extensive technology.
+            </p>
+          </div>
+          <div class="below flex flex-row gap-2 pt-10 pb-12">
+            <div class="circle-0 flex justify-center items-center">
+              <style>
+                .circle-0 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-0.png" />
+            </div>
+            <div class="circle-1 flex justify-center items-center">
+              <style>
+                .circle-1 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-1.png" />
+            </div>
+            <div class="circle-2 flex justify-center items-center">
+              <style>
+                .circle-2 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-2.png" />
+            </div>
+            <div class="circle-3 flex justify-center items-center">
+              <style>
+                .circle-3 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-3.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-2 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Services</h3>
+          <p class="text-gray-400 text-base">Documentation</p>
+          <p class="text-gray-400 text-base">Design</p>
+          <p class="text-gray-400 text-base">Themes</p>
+          <p class="text-gray-400 text-base">Illustrations</p>
+        </div>
+        <div class="card-3 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Company</h3>
+          <p class="text-gray-400 text-base">About</p>
+          <p class="text-gray-400 text-base">Terms</p>
+          <p class="text-gray-400 text-base">Privacy Policy</p>
+          <p class="text-gray-400 text-base">Careers</p>
+        </div>
+        <div class="card-4 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Job Info</h3>
+          <p class="text-gray-400 text-base">Select</p>
+          <p class="text-gray-400 text-base">Servicesn</p>
+          <p class="text-gray-400 text-base">Payment</p>
+        </div>
+        <div class="card-5 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Contact</h3>
+          <p class="text-gray-400 text-base">
+            <span class="text-white">Call :</span> 971 5546 963
+          </p>
+          <p class="text-gray-400 text-base">
+            <span class="text-white">Email :</span> example@gmail.com
+          </p>
+          <p class="text-gray-400 text-base">
+            <span class="text-white">Address :</span> Dhaka, Bangladesl
+          </p>
+        </div>
+        <div class="card-6 hidden">
+          <div class="circle-0 flex justify-center items-center">
+            <style>
+              .circle-0 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-0.png" />
+          </div>
+          <div class="circle-1 flex justify-center items-center">
+            <style>
+              .circle-1 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-1.png" />
+          </div>
+          <div class="circle-2 flex justify-center items-center">
+            <style>
+              .circle-2 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-2.png" />
+          </div>
+          <div class="circle-3 flex justify-center items-center">
+            <style>
+              .circle-3 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-3.png" />
+          </div>
+        </div>
+      </div>
+      <footer class="w-4/5 flex flex-col items-center pb-5 pt-2">
+        <hr class="text-gray-700/20 border-gray-700 w-10/12" />
+        <p class="text-gray-400 text-center p-4">
+          Copyright©chakri.All right reserved
+        </p>
+      </footer>
+      <style>
+        @media only screen and (max-width: 600px) {
+          .inner-container {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+          }
+          .below {
+            display: none;
+          }
+
+          .card-6 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 35px 0px 30px 0px;
+          }
+        }
+      </style>
+    </section>
+  </body>
 </html>
