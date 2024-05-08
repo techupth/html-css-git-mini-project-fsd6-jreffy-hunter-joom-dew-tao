@@ -1,41 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <title>CSS Miniproject FSD6-[W] Group2 Jeff-Hunter-Joom-Dew-Tao</title>
   </head>
   <body>
-    <section class="1">
-
+    <section class="1"></section>
+    <section class="2 w-screen flex flex-col items-center p-10 gap-5">
+      <h2 class="foot-text font-bold text-[40px]">Trusted Companies</h2>
+      <div class="companies flex flex-row justify-between gap-5">
+        <div
+          class="'com-0 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-0.png" /><img
+            src="./images/text-0.png"
+            class="h-3"
+          />
+        </div>
+        <div
+          class="com-1 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-1.png" /><img
+            src="./images/text-1.png"
+            class="h-3"
+          />
+        </div>
+        <div
+          class="com-2 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-2.png" /><img
+            src="./images/text-2.png"
+            class="h-4"
+          />
+        </div>
+        <div
+          class="com-3 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-3.png" /><img
+            src="./images/text-3.png"
+            class="h-4"
+          />
+        </div>
+        <div
+          class="com-4 flex items-center justify-center py-3 px-5 gap-1 hover:bg-white hover:border-white hover:rounded-[10px] hover:shadow-xl"
+        >
+          <img src="./images/logo-4.png" /><img
+            src="./images/text-4.png"
+            class="h-4"
+          />
+        </div>
+      </div>
+      <style>
+        @media only screen and (max-width: 600px) {
+          .foot-text {
+            font-size: 32px;
+            padding-bottom: 5px;
+          }
+          .companies {
+            display: grid;
+            grid-template-columns: repeat(1, 3fr);
+            height: 60vh;
+          }
+        }
+      </style>
     </section>
-    <section class="2">
-
-    </section>
-    <section class="3">
-
-    </section>
-    <section class="4">
-
+    <!-- SECTION3 TAO BELOW HERE -->
+    <section id="section-help" class="bg-white grid grid-cols-2 my-[10rem] mx-[40rem] flex-wrap">
+      <div class="cirble-box relative z-10">
+          <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#d4eff6] rounded-full animate-pulse" id="blue-box"></div>
+          <div class="absolute left-[10rem] top-[-2rem]  w-72 h-72 bg-[#fee095] rounded-full animate-pulse" id="yellow-box"></div>
+          <div class="absolute left-[20rem] top-[12rem]  w-24 h-24 bg-white rounded-full border border-[#eee] animate-pulse" id="white-box"></div>
+      </div>
+      <div class="text-box-section3 z-20 flex flex-col w-96 h-96 self-center justify-self-end justify-between mr-4" id="text-box-section3">
+          <h1 class="text-4xl">
+              We Help to Create Possibility & Success in Your Career!
+          </h1>
+          <p class="text-xl text-[#6f6f76]">
+              Continually administrate process-centric human capital rather than bleeding-edge methodologies. Distinctively supply accurate methods of empowerment before.
+          </p>
+          <button class="bg-amber-500 text-white rounded-full w-52 h-16 hover:bg-amber-400 active:bg-amber-600 focus:ring-2 ring-amber-300">
+              Get Started Today
+          </button>
+      </div>
+  </section>
+    <!-- END OF SECTION3 TAO -->
+    <section class="section4 flex flex-col items-center ">
+      <div class="container">
+        <p class="header-text text-center w-screen font-bold">We Have Most of <br>Popular Departments</p>
+        <div class="container-1">
+        <div class="box1">
+          <div>
+            <div class="pic-empty"></div>
+            <p class="info-1 text-left font-bold">Artificial intelligence</p>
+          <p class="text-left font-extralight">Assertively parallel task synergistic<br>deliverables after high-quality</p>
+          <button class="but5"> Learn More ⭢</button>
+        </div>
+        </div>
+        <div class="box2">
+          <div>
+            <div class="pic-empty"></div>
+            <p class="info-1 text-left font-bold">Civil Engineering</p>
+          <p class="text-left font-extralight">Assertively parallel task synergistic<br>deliverables after high-quality</p>
+          <button class="but5"> Learn More ⭢</button>
+        </div>
+        </div>
+        <div class="box3">
+          <div>
+            <div class="pic-empty"></div>
+            <p class="info-1 text-left font-bold">Business Studies</p>
+          <p class="text-left font-extralight">Assertively parallel task synergistic<br>deliverables after high-quality</p>
+          <button class="but5"> Learn More ⭢</button>
+        </div>
+      </div>
+        </div>
+        <div class="butt">
+        <button class="but4">View All Department</button>
+      </div>
+      </div>
     </section>
     <section class="5">
+      <div class="head">
+        <p class="text-header">Introduce with Our <br />Famous Teacher</p>
+        <button class="button1">View all Teachers</button>
+      </div>
+      <div class="content">
+        <div class="teacher1">
+          <div class="pic1"></div>
+          <p class="text-center font-bold">Shaapir Prio</p>
+          <p class="text-center font-extralight">Assistant Director</p>
+          <div class="info">
+            <a href="#"><img src="./pichunter/g.png" alt="google" /></a>
+            <a href="#"><img src="./pichunter/x.jpg" alt="X" /></a>
+            <a href="#"><img src="./pichunter/ig.jpg" alt="intragram" /></a>
+            <a href="#"><img src="./pichunter/in.jpg" alt="link-in" /></a>
+          </div>
+        </div>
+        <div class="teacher2">
+          <div class="pic2"></div>
+          <p class="text-center font-bold">Sellina</p>
+          <p class="text-center font-extralight">Director</p>
+          <div class="info">
+            <a href="#"><img src="./pichunter/g.png" alt="google" /></a>
+            <a href="#"><img src="./pichunter/x.jpg" alt="X" /></a>
+            <a href="#"><img src="./pichunter/ig.jpg" alt="intragram" /></a>
+            <a href="#"><img src="./pichunter/in.jpg" alt="link-in" /></a>
+          </div>
+        </div>
+        <div class="teacher3">
+          <div class="pic3"></div>
+          <p class="text-center font-bold">John Smith</p>
+          <p class="text-center font-extralight">Assistant Director</p>
+          <div class="info">
+            <a href="#"><img src="./pichunter/g.png" alt="google" /></a>
+            <a href="#"><img src="./pichunter/x.jpg" alt="X" /></a>
+            <a href="#"><img src="./pichunter/ig.jpg" alt="intragram" /></a>
+            <a href="#"><img src="./pichunter/in.jpg" alt="link-in" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section6">
+      <!--Joom section: Review --> 
+      <div class="review-j">
+       <div class="container-rv-j">
+         <div class="review-sec-j">
+           <div class="rv1-2">
+             <div class="rvtop-j">
+               <div class="rwtop1-j">
+                 <div class="photo1-j"></div>
+                 
+                 <div class="name-j">
+                   <p id="name-j">Jaquon Hart</p>
+                   <div id="job-j">Civil Engineer</div>
+                 </div>
+                 <div class="star-j">
+                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                 </div>
+               </div>
 
-    </section>
-    <section class="6"> 
-      
-    </section>
+               <div class="rwtop2-j">
+                 <div class="msg-j">
+                   <p class="msg1-j">"With Edu, we're able to easily track our performance in full detail. It's become an essential tool for us to grow and engage with our audience.”</p>
+                 </div>
+               </div>
+             </div>
+
+
+             <!--rw2-->
+             <div class="rvbottm-j">
+               <div class="rwbottom1-j">
+                 <div class="photo2-j"></div>
+                 <div class="name2-j">
+                   <p id="name-j">Jaquon Hart </p>
+                   <div id="job-j">Civil Engineer</div>
+                 </div>
+                 <div class="star-j">
+                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                     <span class="fa fa-star checked-j"></span>
+                 </div>
+               </div>
+               <div class="rvbottom2-j">
+                 <div class="msg-j">
+                   <p class="msg2-j">"With Edu, we're able to easily track our performance in full detail. It's become an essential tool for us to grow and engage with our audience.”</p>
+                 </div>
+                 <div class="bt-j">
+                   <!--arrow atton -->
+                   <div class="bt1-j"><span class="material-symbols-outlined">
+                     arrow_circle_left
+                     </span></div>
+                   <div class="bt2-j"><span class="material-symbols-outlined">
+                     arrow_circle_right
+                     </span>
+                   </div>
+                 </div>
+               </div>
+           </div>
+         </div>
+         <div class="rw5000-j">
+           <div>
+            <p class="frm-student-j"><b>5000 Reviews <br>from Our Successful <br>Students!</b></p>
+           </div>
+           <div>
+             <p class="msg-5000-j">Teractively recaptiualize intermandated e-commerce after sticky applications. Dynamically reintermediate viral testing procedures through technically sound.</p>
+           </div>
+         </div>     
+          
+         
+       </div>
+
+     </div>
+
+
+   </section>
     <section class="7">
+    <div class="empty">
+    </div>
+    <div class="foot">
+      <h1 class="text-box">Create Free Account<br>& Get Register</h1>
+      <img class="img1" src="./pichunter/Vector.png" alt="tik" width="40px">
+      <img class="img2" src="./pichunter/Vector2.png" alt="tik-below" width="35px">
+      <button class="button2">Register Now</button>
+    </div>
+  </section>
+    <section class="8 w-screen bg-black flex flex-col items-center">
+      <div class="inner-container w-3/4 flex flex-row justify-around">
+        <div class="card-1 flex flex-col justify-between pr-2 flex-wrap">
+          <div class="above grid pt-20 gap-3">
+            <img src="./images/logo-eu.png" />
+            <p class="text-gray-400 text-base">
+              Professionally scale cross functional
+            </p>
+            <p class="text-gray-400 text-base">
+              human capital and extensive technology.
+            </p>
+          </div>
+          <div class="below flex flex-row gap-2 pt-10 pb-12">
+            <div class="circle-0 flex justify-center items-center">
+              <style>
+                .circle-0 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-0.png" />
+            </div>
+            <div class="circle-1 flex justify-center items-center">
+              <style>
+                .circle-1 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-1.png" />
+            </div>
+            <div class="circle-2 flex justify-center items-center">
+              <style>
+                .circle-2 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-2.png" />
+            </div>
+            <div class="circle-3 flex justify-center items-center">
+              <style>
+                .circle-3 {
+                  width: 40px;
+                  height: 40px;
+                  background-color: gray;
+                  border: solid 1px gray;
+                  border-radius: 100%;
+                }
+              </style>
+              <img src="./images/icon-3.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-2 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Services</h3>
+          <p class="text-gray-400 text-base">Documentation</p>
+          <p class="text-gray-400 text-base">Design</p>
+          <p class="text-gray-400 text-base">Themes</p>
+          <p class="text-gray-400 text-base">Illustrations</p>
+        </div>
+        <div class="card-3 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Company</h3>
+          <p class="text-gray-400 text-base">About</p>
+          <p class="text-gray-400 text-base">Terms</p>
+          <p class="text-gray-400 text-base">Privacy Policy</p>
+          <p class="text-gray-400 text-base">Careers</p>
+        </div>
+        <div class="card-4 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Job Info</h3>
+          <p class="text-gray-400 text-base">Select</p>
+          <p class="text-gray-400 text-base">Servicesn</p>
+          <p class="text-gray-400 text-base">Payment</p>
+        </div>
+        <div class="card-5 flex flex-col pt-20 pr-2 gap-5 flex-wrap">
+          <h3 class="text-white text-xl font-semibold">Contact</h3>
+          <p class="text-gray-400 text-base">
+            <span class="text-white">Call :</span> 971 5546 963
+          </p>
+          <p class="text-gray-400 text-base">
+            <span class="text-white">Email :</span> example@gmail.com
+          </p>
+          <p class="text-gray-400 text-base">
+            <span class="text-white">Address :</span> Dhaka, Bangladesl
+          </p>
+        </div>
+        <div class="card-6 hidden">
+          <div class="circle-0 flex justify-center items-center">
+            <style>
+              .circle-0 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-0.png" />
+          </div>
+          <div class="circle-1 flex justify-center items-center">
+            <style>
+              .circle-1 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-1.png" />
+          </div>
+          <div class="circle-2 flex justify-center items-center">
+            <style>
+              .circle-2 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-2.png" />
+          </div>
+          <div class="circle-3 flex justify-center items-center">
+            <style>
+              .circle-3 {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border: solid 1px gray;
+                border-radius: 100%;
+              }
+            </style>
+            <img src="./images/icon-3.png" />
+          </div>
+        </div>
+      </div>
+      <footer class="w-4/5 flex flex-col items-center pb-5 pt-2">
+        <hr class="text-gray-700/20 border-gray-700 w-10/12" />
+        <p class="text-gray-400 text-center p-4">
+          Copyright©chakri.All right reserved
+        </p>
+      </footer>
+      <style>
+        @media only screen and (max-width: 600px) {
+          .inner-container {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+          }
+          .below {
+            display: none;
+          }
 
+          .card-6 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 35px 0px 30px 0px;
+          }
+        }
+      </style>
     </section>
-    <section class="8">
-
-    </section> 
   </body>
 </html>
