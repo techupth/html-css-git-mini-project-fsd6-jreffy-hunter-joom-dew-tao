@@ -1,14 +1,19 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .section4 {
   background-color: rgb(240, 232, 219);
 }
-.but5 {
+.button-learn {
   color: sandybrown;
   padding-top: 20px;
 }
-.butt {
+.button-learn:hover{
+  color: rgb(240, 130, 34);
+  text-decoration: underline;
+}
+.buttton-view {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -19,13 +24,13 @@ body {
   font-size: larger;
   padding-bottom: 30px;
 }
-.info-1 {
+.departmentName {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.box1,
-.box2,
-.box3 {
+.content-firstDepartment,
+.content-secondDepartment,
+.content-thirdDepartment {
   border-radius: 10px;
   background-color: white;
   width: 350px;
@@ -36,17 +41,17 @@ body {
   align-items: flex-start;
   padding: 20px;
 }
-.pic-empty {
+.pic-department {
   background-color: rgb(180, 175, 175);
   border-radius: 20px 20px 0px 0px;
   width: 300px;
   height: 200px;
 }
-.container-1 {
+.container-allDepartment {
   display: flex;
   flex-direction: row;
 }
-.but4 {
+.button-viewAllDepartment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,14 +79,30 @@ body {
   justify-content: space-between;
   margin: 10px;
 }
-.button1,
-.but4 {
+.button-viewTeachers,
+.button-viewAllDepartment {
   color: white;
   padding: 15px;
   background-color: sandybrown;
   border-radius: 10px;
-  box-shadow: 10px 10px rgb(218, 188, 162, 0.5);
+  box-shadow: 0 10px 15px -3px rgb(218, 188, 162, 0.5);
 }
+.button-viewTeachers:hover,
+.button-viewAllDepartment:hover{
+ transform: scale(1.1); 
+ background-color: rgb(247, 115, 0);
+}
+
+.button-viewTeachers:focus,
+.button-viewAllDepartment:focus{
+ background-color: sandybrown;
+}
+
+.button-viewTeachers:active,
+.button-viewAllDepartment:active{
+ background-color: rgb(247, 103, 0);
+}
+
 .content {
   width: 100vw;
   height: 100%;
@@ -90,30 +111,31 @@ body {
   justify-content: center;
   align-items: center;
 }
-.pic1,
-.pic2,
-.pic3 {
+.pic-teacher1,
+.pic-teacher2,
+.pic-teacher3 {
   border-radius: 100%;
   width: 300px;
   height: 300px;
   margin: 25px;
 }
-.pic1 {
+.pic-teacher1 {
   background-color: rgb(178, 123, 214, 0.5);
 }
-.pic2 {
+
+.pic-teacher2 {
   background-color: rgb(129, 241, 125, 0.5);
 }
-.pic3 {
+.pic-teacher3 {
   background-color: rgb(230, 187, 152);
 }
-.info {
+.info-teacher {
   margin: 10px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.foot {
+.foot-register {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -127,7 +149,7 @@ body {
   font-weight: bolder;
   padding: 15px;
 }
-.button2 {
+.button-register {
   display: flex;
   align-items: center;
   font-size: xx-small;
@@ -136,13 +158,15 @@ body {
   padding: 10px;
   background-color: rgb(224, 122, 32);
 }
-
-.img1 {
+.button-register:hover{
+ background-color: rgb(247, 115, 0);
+}
+.pic-vector {
   position: absolute;
   top: 60px;
   left: 170px;
 }
-.img2 {
+.pic-vectorreverse {
   display: none;
 }
 .empty {
@@ -150,13 +174,13 @@ body {
   height: 340px;
 }
 
-@media only screen and (max-width: 600px) {
-  .container-1 {
+@media only screen and (max-width: 640px) {
+  .container-allDepartment {
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
-  .butt {
+  .buttton-view {
     margin-bottom: 50px;
   }
   .content {
@@ -168,23 +192,23 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  .button1 {
+  .button-viewTeachers {
     width: 180px;
   }
-  .foot {
+  .foot-register {
     display: flex;
     flex-direction: column;
     padding: 5px;
     align-items: flex-start;
     height: 140px;
   }
-  .img1 {
+  .pic-vector {
     display: none;
   }
   .text-box {
     padding: 10px 5px;
   }
-  .img2 {
+  .pic-vectorreverse {
     padding: 10px;
     display: flex;
     position: absolute;
@@ -194,13 +218,13 @@ body {
   .empty {
     height: 50px;
   }
-  .button2 {
+  .button-register {
     margin-left: 15px;
   }
 }
 
 /* Tao Section */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   #section-help {
     display: flex;
     flex-direction: column;
@@ -229,227 +253,330 @@ body {
 
 
 .section6 {
-    width: 100vw;
-    height: fit-content;
-    background-color: brown;
-  }
+  width: 100vw;
+  height: fit-content;
+  
+}
 
-  .review-j {
-    background-color: white;
-    width: 100vw;
-    height: fit-content;
-  }
-  
-  .container-rv-j {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100vw;
-    height: fit-content;
-   
-  }
-  
-  .review-sec-j {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: fit-content;
-  }
-  
-  .rv1-2{
-    
-    position: relative;
-    width: fit-content;
-    height: fit-content;
+.review-section {
+  background-color: white;
+  width: 100vw;
+  height: fit-content;
+}
 
-  }
-  .rvtop-j {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: orange;
-    width: 450px;
-    height: 250px;
-    border-radius: 20px;
-    margin: 0px;
-    position: absolute;
-    left: 200px;
-    top: 50px;
-    z-index: 1;
-    box-shadow: rgba(226, 190, 30, 0.16) 0px 6px 9px,
-      rgba(248, 227, 41, 0.23) 0px 6px 9px;
-  }
+.container-rv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   
-  .rwtop1-j {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
-  }
-  
-  .photo1-j {
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-    background-color: rgb(175, 173, 173);
-    margin: 20px;
-  }
-  
-  .rwtop2-j {
-    padding: 20px;
-    color: white;
-  }
+  width: 100vw;
+  height: fit-content;
+ 
+}
 
+.review-sec-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: fit-content;
+}
+
+.rv1-2{
   
-  .rvbottm-j {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(255, 253, 250);
-    width: 450px;
-    height: 250px;
-    border-radius: 20px;
-    margin: 100px;
-    border: 2px solid rgb(243, 225, 225);
-    z-index: 0;
-  }
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 135.65px;
+
+}
+.rv-top {
+  display: flex;
+  flex-direction: column;
   
-  .rwbottom1-j {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    color: rgb(204, 200, 200);
-  }
-  .photo2-j {
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-    background-color: rgb(175, 173, 173);
-    margin: 20px;
-  }
+  background-color: orange;
+  width: 695.27px;
+  height: 344px;
+  border-radius: 18.17px;
+  margin: 0px;
+  position: absolute;
+  left: 190px;
+  top: 90px;
+  z-index: 1;
+  box-shadow: rgba(226, 190, 30, 0.16) 0px 6px 9px,
+    rgba(248, 227, 41, 0.23) 0px 6px 9px;
+}
+
+.rv-top1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-top: 25px;
+  margin-left: 25px;
   
-  .rvbottom2-j {
-    padding: 20px;
-    color: rgb(172, 166, 166);
-  }
-  
-  .bt-j {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  
-  .star-j {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-left: 100px;
-  }
-  
-  .rw5000-j {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 400px;
-    height: 400px;
-    margin: 50px;
-    
-  }
-  
-  .frm-student-j {
-    font-size: 20px;
-    margin-bottom: 0;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 250px;
-    height: fit-content;
-  }
-  
-  .msg-5000-j {
-    font-size: 14px;
-    margin: 15px;
-    width: 250px;
-    height: 20px;
-  }
-  
-  @media only screen and (max-width: 600px){
-    .container-rv-j {
-      flex-direction: column;
-      align-items: center;
-      width: 100vw;
-      height: fit-content;
-      margin: 20px;
-      margin-bottom: 400px;
-    }
-  
-    .rvtop-j {
-      width: 300px;
-      height: 500px;
-      margin: 20px auto;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      position: absolute;
-      left: 70px;
-      top: 30px;
-    }
-    .star-j {
-      position: absolute;
-      top: 120px;
-      right: 190px;
-    }
-  
-    .msg-j {
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
-  
-    .photo1-j {
-      width: 80px;
-      height: 80px;
-      border-radius: 100px;
-    }
-  
-    #name-j {
-      font-weight: 500;
-    }
-  
-    .rvbottm-j {
-      width: 300px;
-      height: 500px;
-      margin: 20px auto;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      position: absolute;
-      left: 70px;
-      top: 80px;
-    }
-  
-    .rwtop1-j,
-    .rwbottom1-j {
-      justify-content: center;
-    }
-  
-    .rw5000-j {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-.section1 {
-    background-color: #FFFBF4;
-    box-sizing: border-box;
+}
+
+.photo-rv-top {
+  width: 87.21px;
+  height: 87.21px;
+  border-radius: 100px;
+  background-color: rgb(175, 173, 173);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.rv-top2 {
+  color: white;
+  width: 598.37px;
+  height: 144px;
+  font-size: 24px;
+  font-weight: 400px;
+  font-family: Rubik;
+  margin-top: 25px;
+  margin-left: 50px;
+  line-height: 48px;
 }
 
 
+.rv-bottom {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: rgb(255, 253, 250);
+  width: 695.27px;
+  height: 344px;
+  border-radius: 18.17px;
+  margin-top: 170px;
+  margin-left: 60px;
+  margin-right: 140px;
+  z-index: 0;
+}
+
+.rv-bottom1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-top: 25px;
+  margin-left: 25px;
+  
+  
+}
+.photo-rv-bottom {
+  width: 87.21px;
+  height: 87.21px;
+  border-radius: 100px;
+  background-color: rgb(175, 173, 173);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#name-rv-top,
+#name-rv-bt {
+  font-family: Poppins;
+  font-size: 24.23px;
+  font-weight: 700px;
+
+}
+
+.job-rv {
+  font-family: Rubik;
+  font-size: 19.38px;
+  font-weight: 400px;
+}
+
+
+.rv-bottom2 {
+
+  color: rgb(172, 166, 166);
+  margin-top: 25px;
+  margin-left: 50px;
+  width: 595px;
+  height: 144px;
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: 400px;
+  line-height: 48px;
+  
+}
+
+.arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.star-rv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 200px;
+  letter-spacing: 5px;
+  width: 143.05px;
+  height: 21.8px;
+}
+
+.rv-5000 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 453px;
+  height: 312px;
+  margin-top: 229.65px;
+  margin-left: 100px;
+  font-family: Poppins;
+  
+}
+
+.frm-student {
+  font-size: 40px;
+  margin-bottom: 0;
+  font-weight: 700px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 453px;
+  height: 174px;
+}
+
+.msg-5000 {
+  font-size: 18px;
+  font-weight: 400px;
+  margin: 15px;
+  width: 453px;
+  height: 108px;
+  font-family: Rubik;
+}
+
+@media only screen and (max-width: 640px){
+  .container-rv {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    margin: 20px;
+    margin-bottom: 450px;
+  }
+
+  .rv-top {
+    width: 327px;
+    height: 545px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+  }
+  .star-rv {
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    letter-spacing: 7px;
+    font-size: 19.38px;;
+  }
+
+  .msg-rv {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .photo-rv-top,
+  .photo-rv-bottom {
+    width: 87.21px;
+    height: 87.21px;
+    border-radius: 100px;
+    
+  }
+
+  #name-rv-top {
+    font-weight: 500;
+  }
+
+  .rv-bottom {
+    width: 327px;
+    height: 545px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    left: 70px;
+    top: 100px;
+  }
+
+  .rv-top1,
+  .rv-bottom1 {
+    position: relative;
+    bottom:20px;
+    right: 20px;
+    
+  }
+
+  .rv-top2,
+  .rv-bottom2 {
+
+    width: 267px;
+    height: 336px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 48px;
+    position: relative;
+    right: 20px;
+    color: white;
+  }
+
+  .rv-5000 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 200px;
+    right: 50px;
+    margin-bottom: 40px;
+
+  
+  }
+
+  .frm-student {
+
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700px;
+    line-height: 34px;
+    width: 327px;
+    height: 68px;
+    margin-top: 20px;
+    margin-left: 24px;
+  }
+
+  .msg-5000 {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 36px;
+    width: 327px;
+    height: 180px;
+    margin-top: 60px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .arrow{
+    position: relative;
+    left: 250px;
+    font-size: 50px;
+  }
+
+}
